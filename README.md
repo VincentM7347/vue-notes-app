@@ -1,64 +1,60 @@
-# Notely
+# Notizen-App mit Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+> Ein persönliches Projekt zur Demonstration von Frontend-Entwicklungsfähigkeiten mit dem Vue.js-Framework.
 
-## Recommended IDE Setup
+## 1. Kurzbeschreibung
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Dies ist eine einfache, aber voll funktionsfähige **Single-Page-Application (SPA)** zur Verwaltung von persönlichen Notizen. Die Anwendung ermöglicht das Erstellen, Anzeigen, Bearbeiten und Löschen von Notizen in einer reaktiven und benutzerfreundlichen Oberfläche.
 
-## Type Support for `.vue` Imports in TS
+Das Projekt wurde entwickelt, um die Kernkonzepte von Vue.js, einschließlich Komponentenarchitektur, State Management und Client-seitigem Routing, praktisch anzuwenden.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 2. Architektur
 
-## Customize configuration
+Die Anwendung ist als reine Frontend-SPA aufgebaut:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+* **Komponenten-Architektur:** Die Benutzeroberfläche ist modular in wiederverwendbare Vue-Komponenten unterteilt (z.B. `NoteList` zur Anzeige aller Notizen und `NoteDetail` zur Ansicht und Bearbeitung einer einzelnen Notiz).
+* **Client-seitiges Routing:** Die Navigation zwischen den verschiedenen Ansichten (z.B. der Listenansicht und der Detailansicht) wird durch `vue-router` gesteuert, was eine schnelle Navigation ohne Neuladen der Seite ermöglicht.
+* **Datenpersistenz:** Die Notizen werden lokal im Browser mittels `localStorage` gespeichert, sodass sie auch nach dem Schließen des Fensters erhalten bleiben.
 
-## Project Setup
+## 3. Kernfeatures
 
-```sh
-npm install
-```
+* **Notizen erstellen & löschen:** Benutzer können neue Notizen hinzufügen und bestehende aus der Liste entfernen.
+* **Detailansicht:** Durch Klick auf eine Notiz in der Liste gelangt man zu einer Detailansicht.
+* **Dynamisches Routing:** Jede Notiz ist über eine eigene URL erreichbar (z.B. `/notes/1`).
+* **Reaktive Oberfläche:** Änderungen an den Daten werden dank des reaktiven Systems von Vue.js sofort in der Benutzeroberfläche widergespiegelt.
 
-### Compile and Hot-Reload for Development
+## 4. Verwendeter Tech-Stack
 
-```sh
-npm run dev
-```
+| Kategorie       | Technologie / Bibliothek   |
+| --------------- | -------------------------- |
+| **Framework** | Vue.js (Version 3)         |
+| **Routing** | Vue Router                 |
+| **Sprachen** | JavaScript (ES6+), HTML5, CSS3 |
+| **Build-Tool** | Vue CLI / Vite             |
+| **Paketmanager**| npm                        |
 
-### Type-Check, Compile and Minify for Production
 
-```sh
-npm run build
-```
+## 5. Setup & Ausführung
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Voraussetzungen
 
-```sh
-npm run test:unit
-```
+* Node.js und npm (Node Package Manager)
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### Lokale Ausführung
 
-```sh
-# Install browsers for the first run
-npx playwright install
+1.  **Repository klonen und Abhängigkeiten installieren:**
+    ```bash
+    git clone [https://github.com/DEIN-BENUTZERNAME/DEIN-NOTIZEN-REPO.git](https://github.com/DEIN-BENUTZERNAME/DEIN-NOTIZEN-REPO.git)
+    cd DEIN-NOTIZEN-REPO
+    npm install
+    ```
 
-# When testing on CI, must build the project first
-npm run build
+2.  **Entwicklungsserver starten:**
+    ```bash
+    # Falls du Vue CLI verwendet hast:
+    npm run serve
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+    # Falls du Vite verwendet hast:
+    npm run dev
+    ```
+Die Anwendung ist anschließend unter `http://localhost:8080` (oder einem ähnlichen Port) im Browser erreichbar.
