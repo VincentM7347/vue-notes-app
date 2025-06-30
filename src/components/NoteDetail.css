@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.textarea-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  input[type="text"] {
+    background-color: #2e2d2d;
+    color: #e3dede;
+    width: 100%; 
+    max-width: 500px; 
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    height: 20px;
+    padding: 10px; 
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lato';
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  textarea {
+    background-color: #2e2d2d;
+    color: #e3dede;
+    width: 100%; 
+    max-width: 500px; 
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    height: 200px;
+    padding: 10px; 
+    font-size: 14px;
+    font-family: 'Lato';
+    margin-top: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .errorMessage {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .successMessage {
+    color: green;
+    margin-top: 10px;
+  }

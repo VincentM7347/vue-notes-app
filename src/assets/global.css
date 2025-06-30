@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: #2e2d2d; 
+    color: #e3dede; 
+    font-family: 'Lato';
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: 'Lato';
+    min-height: 100vh; 
+  }
+  
+  #app h1 {
+    font-family: 'Lato';
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 60px
+  }
+
+
+  
+  a[href="/"] { 
+    display: block;
+    text-align: center; 
+    font-size: 18px;
+    font-weight: bold; 
+    color: #e3dede;
+    background-color: #785656; 
+    padding: 15px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin-bottom: 20px; 
+    transition: background-color 0.3s ease; 
+
+  }
+  
+  a[href="/"]:hover { 
+    background-color: #828282; 
+  }
+
+#app button {
+    background-color: #5a5555; 
+    color: #e3dede;
+    margin-right: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    font-family: 'Lato';
+    transition: background-color 0.3s ease; 
+  }
+
+  #app button:hover {
+    background-color: #828282;
+  }
+
+  .search-container { 
+    width: 130%;
+    max-width: 500px;
+    margin: 20px; 
+    position: relative; 
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Lato'
+  }
+
+  
